@@ -6,6 +6,10 @@
 @import './helpers/variables';
 @import 'bootstrap/scss/bootstrap';
 
+// utilities
+@import './utilities/utilities.scss';
+@import 'bootstrap/scss/utilities/api';
+
 // base
 @import './base/base';
 
