@@ -93,3 +93,11 @@
     z-index: -1;
   }
 }
+
+.category-bg {
+  border-radius: 40px;
+
+  @media (min-width: 1200px) {
+  border-radius: 80px;
+  }
+}

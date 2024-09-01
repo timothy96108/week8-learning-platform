@@ -471,6 +471,119 @@
             </div>
           </div>
         </section>
+
+        <section class="category">
+          <div class="container py-10 py-xl-20">
+            <div class="category-bg bg-primary px-4 py-20">
+              <div class="row flex-xl-row-reverse justify-content-xl-between align-items-xl-center">
+                <div class="col-12 col-xl-5 mb-10 mb-xl-0">
+                  <div class="d-flex flex-column flex-xl-row align-items-xl-start gap-2 mb-2">
+                    <img src="/assets/images/deco/polygon-1.png" alt="deco" width="80">
+                    <h1 class="text-white">
+                      想學什麼嗎？<br />
+                      一探究竟。
+                    </h1>
+                  </div>
+                  <img src="/assets/images/deco/line-2.png" alt="deco">
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div class="category-swiper swiper">
+                    <ul class="swiper-wrapper p-0">
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #ff994f;">
+                            <img src="/assets/images/icons/megaphoneSimple.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">網路行銷</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #5e5e5e;">
+                            <img src="/assets/images/icons/camera.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">拍攝剪輯</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #ff9bad;">
+                            <img src="/assets/images/icons/chartBarHorizontal.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">自我成長</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #564ffd;">
+                            <img src="/assets/images/icons/penNib.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">藝術設計</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #54dff2;">
+                            <img src="/assets/images/icons/bugDroid.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">數據分析</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #52e9bc;">
+                            <img src="/assets/images/icons/creditCard.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">投資理財</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #cf93ff;">
+                            <img src="/assets/images/icons/headphones.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">音樂創作</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="#" class="d-flex align-items-center p-5 bg-white rounded-5">
+                          <div class="p-4 me-5 rounded-3" style="background-color: #0068ff;">
+                            <img src="/assets/images/icons/arrow.png" alt="icon">
+                          </div>
+                          <div>
+                            <p class="fw-bold">搜尋更多</p>
+                            <p class="text-neutral-300">342 門課程</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <%- include('./layout/footer'); -%>
@@ -480,8 +593,6 @@
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
           const bannerSwiper = new Swiper('.banner-swiper', {
-            slidesPerView: 'auto',
-            centeredSlides: true,
             spaceBetween: 24,
             loop: true,
             pagination: {
@@ -495,7 +606,6 @@
           })
 
           const fundraisingSwiper = new Swiper('.fundraising-swiper', {
-            slidesPerView: 1,
             spaceBetween: 24,
             pagination: {
               el: '.fundraising-swiper-pagination',
@@ -539,6 +649,32 @@
             autoplay: {
               delay: 3000,
               disableOnInteraction: false,
+            },
+          })
+
+          const categorySwiper = new Swiper('.category-swiper', {
+            spaceBetween: 24,
+            slidesPerView: 1,
+            grid: {
+              rows: 2,
+              fill: 'row'
+            },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                grid: {
+                  rows: 2,
+                  fill: 'row',
+                },
+              },
+              1200: {
+                slidesPerView: 2,
+                grid: {
+                  rows: 4,
+                  fill: 'row',
+                }
+              }
             },
           })
         </script>
