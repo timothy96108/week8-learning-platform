@@ -1,0 +1,19 @@
+.dropdown {
+  &-menu {
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d1d1d1;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b1b1b1;
+    }
+  }
+}

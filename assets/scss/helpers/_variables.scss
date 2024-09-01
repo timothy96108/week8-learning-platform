@@ -519,11 +519,13 @@ $body-emphasis-color:       $black !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+// $link-color:                              $primary !default;
+$link-color:                              $neutral-400 !default;
 // $link-decoration:                         underline !default;
 $link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        $primary !default;
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -714,6 +716,7 @@ $h4-font-size:                $font-size-base * 1.75 !default;
 $h5-font-size:                $font-size-base * 1.5 !default;
 // $h6-font-size:                $font-size-base !default;
 $h6-font-size:                $font-size-base * 1.25 !default;
+$h7-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -723,7 +726,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -732,7 +736,8 @@ $font-sizes: (
 $headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+// $headings-font-weight:        500 !default;
+$headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables
@@ -1335,8 +1340,10 @@ $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
-$dropdown-link-hover-color:         $dropdown-link-color !default;
-$dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+// $dropdown-link-hover-color:         $dropdown-link-color !default;
+$dropdown-link-hover-color:         $white !default;
+// $dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-bg:            $primary !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
