@@ -98,6 +98,35 @@
   border-radius: 40px;
 
   @media (min-width: 1200px) {
-  border-radius: 80px;
+    border-radius: 80px;
+  }
+}
+
+.lecturer {
+  .card {
+    max-width: 416px;
+    margin: 0 auto;
+  }
+
+  .lecturer-photo {
+    margin-left: 60px;
+    width: auto;
+    border-radius: 20px;
+
+    @media (min-width: 1200px) {
+      margin-left: 80px;
+    }
+  }
+
+  .card-body {
+    background: white;
+    box-shadow: 0px 25px 50px -12px #0000001f;
+    margin-right: 24px;
+    margin-top: -40px;
+    border-radius: 20px;
+
+    @media (min-width: 1200px) {
+      margin-left: 32px;
+    }
   }
 }
