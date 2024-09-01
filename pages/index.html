@@ -9,7 +9,6 @@
       <main>
         <section class="banner-swiper swiper">
           <ul class="swiper-wrapper position-relative p-0">
-            <!-- Slides -->
             <li class="swiper-slide">
               <img src="/assets/images/hero-1.png" alt="banner photo" class="banner-photo">
               <div class="banner-course d-flex align-items-center bg-white position-absolute">
@@ -44,9 +43,173 @@
               </p>
             </li>
           </ul>
-          <div class="swiper-pagination position-absolute d-md-none"></div>
-          <div class="swiper-button-prev d-none d-md-flex"></div>
-          <div class="swiper-button-next d-none d-md-flex"></div>
+          <div class="banner-swiper-pagination swiper-pagination position-absolute d-md-none"></div>
+          <div class="banner-swiper-button-prev swiper-button-prev d-none d-md-flex"></div>
+          <div class="banner-swiper-button-next swiper-button-next d-none d-md-flex"></div>
+        </section>
+
+        <section class="fundraising">
+          <div class="container py-20 py-xl-30">
+            <div class="row align-items-xl-center">
+              <div class="col-12 col-xl-4">
+                <div class="mb-6 mb-xl-10">
+                  <h2 class="fundraising-title h1">火熱募資課程</h2>
+                  <p class="fs-6 text-neutral-400">現在購買最優惠✨</p>
+                </div>
+                <ul class="list-unstyled d-flex flex-nowrap flex-xl-wrap gap-2 text-nowrap overflow-auto mb-6 mb-10">
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">全部</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">🍽️ 烹飪料理</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">📊 數據分析</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">🎼 音樂製作</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">📝 創意寫作</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">💬 語言學習</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-primary">🖌️ 藝術創作</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-primary btn-lg d-none d-xl-inline">更多募資課程</button>
+              </div>
+              <div class="col-12 col-xl-8">
+                <div class="fundraising-swiper swiper">
+                  <ul class="swiper-wrapper p-0">
+                    <li class="swiper-slide">
+                      <a class="card shadow" href="#">
+                        <img src="/assets/images/course-1.png" class="card-img-top" alt="course image">
+                        <div class="card-body">
+                          <h3 class="h6 mb-2">健康廚房：營養均衡的素食料理指南</h3>
+                          <div class="d-flex align-items-center mb-6">
+                            <div class="flex-shrink-0">
+                              <img src="/assets/images/teacher-7.png" alt="course lecturer" class="course-lecturer">
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              希姐帶你吃
+                            </div>
+                          </div>
+                          <div class="course-progress">
+                            <div class="d-flex justify-content-between mb-2">
+                              <p class="fw-bold">募資進度 81 %</p>
+                              <small class="text-neutral-400">已有 521 位同學加入</small>
+                            </div>
+                            <div class="progress mb-2" role="progressbar" aria-label="course fundraising progress"
+                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                              <div class=" progress-bar" style="width: 100%;"></div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <p class="fw-bold me-2">NT$ 2,480</p>
+                              <small class="text-neutral-300 text-decoration-line-through text-end">NT$ 3,200</small>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a class="card shadow" href="#">
+                        <img src="/assets/images/course-2.png" class="card-img-top" alt="course image">
+                        <div class="card-body">
+                          <h3 class="h6 mb-2">音樂製作入門：從零開始創作你的音樂</h3>
+                          <div class="d-flex align-items-center mb-6">
+                            <div class="flex-shrink-0">
+                              <img src="/assets/images/teacher-5.png" alt="course lecturer" class="course-lecturer">
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              K.Dee
+                            </div>
+                          </div>
+                          <div class="course-progress">
+                            <div class="d-flex justify-content-between mb-2">
+                              <p class="fw-bold">募資進度 81 %</p>
+                              <small class="text-neutral-400">已有 521 位同學加入</small>
+                            </div>
+                            <div class="progress mb-2" role="progressbar" aria-label="course fundraising progress"
+                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                              <div class=" progress-bar" style="width: 100%;"></div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <p class="fw-bold me-2">NT$ 2,480</p>
+                              <small class="text-neutral-300 text-decoration-line-through text-end">NT$ 3,200</small>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a class="card shadow" href="#">
+                        <img src="/assets/images/course-3.png" class="card-img-top" alt="course image">
+                        <div class="card-body">
+                          <h3 class="h6 mb-2">掌握商業攝影：打造你的專業攝影事業</h3>
+                          <div class="d-flex align-items-center mb-6">
+                            <div class="flex-shrink-0">
+                              <img src="/assets/images/teacher-6.png" alt="course lecturer" class="course-lecturer">
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              Mikeeee
+                            </div>
+                          </div>
+                          <div class="course-progress">
+                            <div class="d-flex justify-content-between mb-2">
+                              <p class="fw-bold">募資進度 81 %</p>
+                              <small class="text-neutral-400">已有 521 位同學加入</small>
+                            </div>
+                            <div class="progress mb-2" role="progressbar" aria-label="course fundraising progress"
+                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                              <div class=" progress-bar" style="width: 100%;"></div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <p class="fw-bold me-2">NT$ 2,480</p>
+                              <small class="text-neutral-300 text-decoration-line-through text-end">NT$ 3,200</small>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a class="card shadow" href="#">
+                        <img src="/assets/images/course-4.png" class="card-img-top" alt="course image">
+                        <div class="card-body">
+                          <h3 class="h6 mb-2">創意寫作工坊：從靈感到出版的全過程</h3>
+                          <div class="d-flex align-items-center mb-6">
+                            <div class="flex-shrink-0">
+                              <img src="/assets/images/teacher-4.png" alt="course lecturer" class="course-lecturer">
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              Kelly Hsu
+                            </div>
+                          </div>
+                          <div class="course-progress">
+                            <div class="d-flex justify-content-between mb-2">
+                              <p class="fw-bold">募資進度 81 %</p>
+                              <small class="text-neutral-400">已有 521 位同學加入</small>
+                            </div>
+                            <div class="progress mb-2" role="progressbar" aria-label="course fundraising progress"
+                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                              <div class=" progress-bar" style="width: 100%;"></div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <p class="fw-bold me-2">NT$ 2,480</p>
+                              <small class="text-neutral-300 text-decoration-line-through text-end">NT$ 3,200</small>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="fundraising-swiper-pagination swiper-pagination position-static mt-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -56,16 +219,41 @@
         <script type="module">
           import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-          const swiper = new Swiper('.banner-swiper', {
+          const bannerSwiper = new Swiper('.banner-swiper', {
             spaceBetween: 24,
             loop: true,
             pagination: {
-              el: '.swiper-pagination',
+              el: '.banner-swiper-pagination',
+              clickable: true,
             },
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.banner-swiper-button-next',
+              prevEl: '.banner-swiper-button-prev',
             },
+          })
+
+          const fundraisingSwiper = new Swiper('.fundraising-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+              el: '.fundraising-swiper-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 24,
+              },
+              1200: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+                grid: {
+                  rows: 2,
+                  fill: 'row',
+                },
+              }
+            }
           })
         </script>
   </body>
