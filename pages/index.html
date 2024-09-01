@@ -7,12 +7,67 @@
     <%- include('./layout/header'); -%>
 
       <main>
-
+        <section class="banner-swiper swiper">
+          <ul class="swiper-wrapper position-relative p-0">
+            <!-- Slides -->
+            <li class="swiper-slide">
+              <img src="/assets/images/hero-1.png" alt="banner photo" class="banner-photo">
+              <div class="banner-course d-flex align-items-center bg-white position-absolute">
+                <span class="badge rounded-pill text-primary bg-primary-100 me-2">熱銷課程 🔥</span>
+                <p class="fw-bold">掌握商業攝影：打造你的專業攝影事業</p>
+              </div>
+              <p class="banner-slogan text-white bg-primary text-center fw-bold py-4 py-md-8 px-md-20">
+                探索感興趣的課程，今天立即上課
+                <i class="bi bi-arrow-right"></i>
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <img src="/assets/images/hero-2.png" alt="banner photo" class="banner-photo">
+              <div class="banner-course d-flex align-items-center bg-white position-absolute">
+                <span class="badge rounded-pill text-primary bg-primary-100 me-2">熱銷課程 🔥</span>
+                <p class="fw-bold">給成人的鋼琴入門課，一小時教你彈奏上手！</p>
+              </div>
+              <p class="banner-slogan text-white bg-primary text-center fw-bold py-4 py-md-8 px-md-20">
+                探索感興趣的課程，今天立即上課
+                <i class="bi bi-arrow-right"></i>
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <img src="/assets/images/hero-3.png" alt="banner photo" class="banner-photo">
+              <div class="banner-course d-flex align-items-center bg-white position-absolute">
+                <span class="badge rounded-pill text-primary bg-primary-100 me-2">熱銷課程 🔥</span>
+                <p class="fw-bold">健康廚房：營養均衡的素食料理指南</p>
+              </div>
+              <p class="banner-slogan text-white bg-primary text-center fw-bold py-4 py-md-8 px-md-20">
+                探索感興趣的課程，今天立即上課
+                <i class="bi bi-arrow-right"></i>
+              </p>
+            </li>
+          </ul>
+          <div class="swiper-pagination position-absolute d-md-none"></div>
+          <div class="swiper-button-prev d-none d-md-flex"></div>
+          <div class="swiper-button-next d-none d-md-flex"></div>
+        </section>
       </main>
 
       <%- include('./layout/footer'); -%>
 
         <script type="module" src="../main.js"></script>
+        <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+          const swiper = new Swiper('.banner-swiper', {
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          })
+        </script>
   </body>
 
 </html>

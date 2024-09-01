@@ -1,0 +1,43 @@
+.swiper {
+  &-button-prev,
+  &-button-next {
+    background: $white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 10px 15px -3px #0000001a;
+
+    &:hover {
+      background: shift-color($white, $link-shade-percentage);
+    }
+
+    &::after {
+      font-family: 'bootstrap-icons';
+      font-size: 1.5rem;
+      color: $primary;
+    }
+  }
+
+  &-button-prev {
+    &::after {
+      content: '\F12F';
+    }
+  }
+
+  &-button-next {
+    &::after {
+      content: '\F138';
+    }
+  }
+
+  &-pagination-bullets {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+  }
+
+  &-pagination-bullet-active {
+    width: 24px;
+    height: 8px;
+    border-radius: 100px;
+  }
+}
