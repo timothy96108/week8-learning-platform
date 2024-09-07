@@ -1,0 +1,1 @@
+import"./bootstrap.min-7f0a3a5d.js";import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";new e(".lecturer-swiper",{spaceBetween:24,breakpoints:{768:{slidesPerView:2,slidesPerGroup:2,spaceBetween:24},1200:{slidesPerView:4,slidesPerGroup:4,spaceBetween:24}},autoplay:{delay:3e3,disableOnInteraction:!1}});
