@@ -1,0 +1,36 @@
+.lecturer {
+  &-avatar {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    background: $white;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 768px) {
+      width: 140px;
+      height: 140px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 220px;
+      height: 220px;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &-sns-link {
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $neutral-200;
+    }
+  }
+}
+
+.course-title {
+  min-height: 3rem;
+}
